@@ -20,12 +20,16 @@
         var canvas = document.getElementById('gamepanel');
         if (canvas.getContext) {
           var ctx = canvas.getContext('2d');
+          //background
+          ctx.fillStyle = "rgb(255,255,255)";
+          ctx.fillRect(0, 0, canvas.width, canvas.height);
+          
         }
       }
     </script>
 
     <div id="gamebox">
-      <canvas id="gamepanel" width="1500px" height="2000px">
+      <canvas id="gamepanel" width="1000px" height="750px">
       </canvas>
     </div>
   </body>
