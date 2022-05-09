@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <! --  -->
+    <style>
+      #gamebox{
+        margin: auto;
+      }
+      #gamepanel{
+        border: 1px solid #000000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <! --  -->
+    <script>
+      function draw() {
+        var canvas = document.getElementById('gamepanel');
+        if (canvas.getContext) {
+          var ctx = canvas.getContext('2d');
+        }
+      }
+    </script>
+
+    <div id="gamebox">
+      <canvas id="gamepanel" width="75%" height="50%">
+      </canvas>
+    </div>
+  </body>
+
+</html>
